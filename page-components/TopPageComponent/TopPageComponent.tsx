@@ -2,12 +2,12 @@ import {TopPageComponentProps} from "./TopPageCompomemt.props";
 import {Advantages, HhData, Htag, Sort, Tag} from "../../components";
 import styles from './TopPageComponent.module.css';
 import {TopLevelCategory} from "../../interfaces/page.interface";
-
-// @ts-ignore
-import cn from 'classnames';
 import {SortEnum} from "../../components/Sort/Sort.props";
 import {useReducer} from "react";
 import {sortReducer} from "./sort.reducer";
+
+// @ts-ignore
+import cn from 'classnames';
 
 export const TopPageComponent = ({ page, products, firstCategory}: TopPageComponentProps): JSX.Element => {
 
