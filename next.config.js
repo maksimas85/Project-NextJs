@@ -1,20 +1,24 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+  reactStrictMode: true,
   images: {
     domains: ['courses-top.ru']
   },
-  webpack5(config) {
+  webpack(config) {
     config.module.rules.push({
-      loader: '@svgr/webpack',
-      options: {
-        prettier: false,
-        svgo: true,
-        svgoConfig: {
-          plugins: [{ removeViewBox: false }],
+      test: /\.svg$/i,
+      issuer: { and: [/\.(js|ts|md)x?$/] },
+      use: [
+        {
+          loader: '@svgr/webpack',
+          options: {
+            prettier: false,
+            svgo: true,
+            svgoConfig: { plugins: [{ removeViewBox: false }] },
+            titleProp: true,
+          },
         },
-        titleProp: true,
-      },
-      test: /\.svg$/,
+      ],
     });
     return config;
   },
