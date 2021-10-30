@@ -1,5 +1,5 @@
 import {FirstLevelMenuItem} from "../interfaces/menu.interface";
-import {TopLevelCategory} from "../interfaces/toppage.interface";
+import {TopLevelCategory} from "../interfaces/page.interface";
 
 export const firstLevelMenu: FirstLevelMenuItem[] = [
     { route: 'courses', name: 'Курсы', icon: <svg style={{width: '20px', height: '20px'}} viewBox="0 0 20 20"><path d="M3.33 8L10 12l10-6-10-6L0 6h10v2H3.33zM0 8v8l2-2.22V9.2L0 8zm10 12l-5-3-2-1.2v-6l7 4.2 7-4.2v6L10 20z"/></svg>,
@@ -11,3 +11,5 @@ export const firstLevelMenu: FirstLevelMenuItem[] = [
     { route: 'products', name: 'Продукты', icon: <svg style={{width: '20px', height: '20px'}} version="1.1" x="0px" y="0px" viewBox="0 0 100 83.373"><path d="M83.685,27.454L100,18.392l-3.601-1.946L66.621,0.221L50.215,9.173L33.359,0L0,18.145l3.548,1.999l13.008,7.227L16.4,27.448  h-0.013v0.013l-16.1,8.77l16.1,8.652v21.752l33.607,16.738l33.613-16.738V44.948l16.23-8.717L83.685,27.454z M66.621,5.345  l24.036,13.08l-11.634,6.471l-24.31-13.053L66.621,5.345z M9.323,18.19L33.359,5.11l11.914,6.484L20.951,24.661L9.323,18.19z   M9.727,36.211l11.908-6.504l24.277,13.131l-11.875,6.419L9.727,36.211z M20.892,63.841v-16.53l13.184,7.083l13.672-7.591v30.41  L20.892,63.841z M79.114,63.841L52.259,77.207V46.751l13.75,7.643l13.105-7.031V63.841z M90.371,36.198l-24.316,13.06l-11.673-6.419  l24.062-13.131L90.371,36.198z"/></svg>,
         id: TopLevelCategory.Products },
 ]
+
+export const priceRu = (price: number): string => price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ').concat(' ₽');

@@ -2,7 +2,7 @@ import {withLayout} from "../../layout/Layout";
 import {GetStaticPaths, GetStaticProps, GetStaticPropsContext} from "next";
 import axios from "axios";
 import {MenuItem} from "../../interfaces/menu.interface";
-import {TopLevelCategory, TopPageModel} from "../../interfaces/toppage.interface";
+import {TopLevelCategory, TopPageModel} from "../../interfaces/page.interface";
 import {ParsedUrlQuery} from "querystring";
 import {ProductModel} from "../../interfaces/product.interface";
 import {firstLevelMenu} from "../../helpers/helpers";
