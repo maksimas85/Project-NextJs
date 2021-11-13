@@ -122,3 +122,24 @@
 
 	border-left: 2px solid var(--green);
 }
+
+.characteristics {
+	display: grid;
+
+	padding-right: 60px;
+
+	font-size: 16px;
+	line-height: 32px;
+	grid-template-columns: auto 1fr auto;
+	gap: 10px;
+}
+
+.characteristicsName {
+	font-weight: bold;
+}
+
+.characteristicsDots {
+	margin-bottom: 5px;
+
+	border-bottom: 1px dashed var(--gray-light);
+}
