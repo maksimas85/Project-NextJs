@@ -3,6 +3,7 @@ import styles from './Layout.module.css';
 import {Sidebar} from "./Sidebar/Sidebar";
 import {Header} from "./Header/Header";
 import {Footer} from "./Footer/Footer";
+import {Up} from "../components";
 import {FunctionComponent} from "react";
 import {AppContextProvider, IAppContext} from "../context/app.context";
 // @ts-ignore
@@ -17,6 +18,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
                 {children}
             </div>
             <Footer className={styles.footer}/>
+            <Up/>
         </div>
     );
 };
