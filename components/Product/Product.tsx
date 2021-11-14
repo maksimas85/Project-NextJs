@@ -12,7 +12,7 @@ import {ForwardedRef, forwardRef} from "react";
 
 // @ts-ignore
 import cn from 'classnames';
-
+// eslint-disable-next-line react/display-name
 export const Product = motion(forwardRef(({ product, className, ...props }: ProductProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
     return (
         <div className={className} {...props} ref={ref}>

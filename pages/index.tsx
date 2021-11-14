@@ -1,5 +1,5 @@
-import {Button, Htag, Input, P, Rating, Tag, Textarea} from "../components";
-import {useState} from "react";
+import {Button, Htag, P, Rating, Tag} from "../components";
+import React, {useState} from "react";
 import {withLayout} from "../layout/Layout";
 import {GetStaticProps} from "next";
 import axios from "axios";
