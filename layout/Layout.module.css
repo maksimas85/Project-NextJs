@@ -29,9 +29,13 @@
 	grid-area: footer;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 865px) {
 	.body {
 		padding: 20px;
+	}
+
+	.sidebar {
+		display: none !important;
 	}
 
 	.wrapper {
@@ -40,10 +44,7 @@
 			"header"
 			"body"
 			"footer";
-	}
-
-	.sidebar {
-		display: none !important;
+		gap: 10px;
 	}
 
 	.header {
